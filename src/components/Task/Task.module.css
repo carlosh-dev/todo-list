@@ -1,0 +1,77 @@
+.taskWrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: .75rem;
+    background: var(--gray-400);
+    border: 1px solid var(--gray-500);
+    border-radius: 8px;
+}
+
+.taskWrapper .titleDefault {
+    flex: 1;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: var(--gray-100);
+}
+
+.taskWrapper .titleDone {
+    flex: 1;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.taskWrapper button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+
+    cursor: pointer;
+
+    line-height: 0;
+    border-radius: 2px;
+
+    transition: color 0.3s;
+}
+
+.taskWrapper button:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+}
+
+.taskWrapper  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskWrapper .checkboxDefault {
+    border-radius: 50px;
+    border: 2px solid var(--blue);
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: border .3s;
+}
+
+.taskWrapper .checkboxDefault:hover {
+    border: 2px solid var(--blue-dark);
+}
+
+.taskWrapper .checkboxDone {
+    border-radius: 50px;
+    border: 0;
+    background: var(--purple-dark);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--gray-100);
+
+    transition: background .3s;
+}
+
+.taskWrapper .checkboxDone:hover {
+    background: var(--purple);
+}

@@ -1,0 +1,61 @@
+.wrapper {
+    margin-top: -1.5rem;
+    max-width: 46rem;
+    margin: -1.5rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.taskForm {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.taskCounter {
+    display: flex;
+    gap: .5rem;
+    font-weight: 700;
+    font-size: .875rem;
+    color: var(--blue);
+}
+
+.doneTasksCounter {
+    display: flex;
+    gap: .5rem;
+    font-weight: 700;
+    font-size: .875rem;
+    color: var(--purple);
+}
+
+.taskCounter span,
+.doneTasksCounter span {
+    background: var(--gray-400);
+    color: var(--gray-100);
+    padding: .125rem .5rem;
+    border-radius: 999px;
+}
+
+.taskForm input {
+    flex: 1;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.taskCountersWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.noTasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    color: var(--gray-300);
+}
