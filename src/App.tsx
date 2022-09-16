@@ -34,7 +34,7 @@ function App() {
       isDone: false,
     };
 
-    setTaskList([...taskList, newTask]);
+    setTaskList(state => [...state, newTask]);
     setNewTaskTitle('');
   }
 
